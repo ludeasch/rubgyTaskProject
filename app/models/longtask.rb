@@ -1,0 +1,2 @@
+class Longtask < Simpletask
+end

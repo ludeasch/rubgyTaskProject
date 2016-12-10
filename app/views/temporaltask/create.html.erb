@@ -1,0 +1,21 @@
+<h1>Temporaltask#create</h1>
+<%= form_for :temporaltask , url: {:controller=>"temporaltask", :action => 'create'} do |f| %>
+  <div class="container">  
+    <p>
+      <%=  f.label :Descripcion %><br>
+      <%= f.text_field :desc ,class: "form-control"%>
+    </p>
+    <p>
+      <%=  f.label :prioridad %><br>
+      <%= f.text_field :prio ,class: "form-control"%>
+    </p>
+     <p>
+      <%=  f.label :fecha_validez %><br>
+      <%= f.text_field :prio ,class: "form-control"%>
+    </p>
+    <p>
+      <%= type=f.submit value="Crear Tarea" %>
+    </p>
+  </div>
+<% end %>
+<p>Find me in app/views/temporaltask/create.html.erb</p>

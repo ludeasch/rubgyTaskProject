@@ -1,0 +1,20 @@
+<h1>Bienvenido a la Aplicacion de Tareas</h1>
+
+<h3>Listas de Tareas:</h3>
+<%= form_for :listask , url: {:controller=>"listask", :action => 'create'} do |f| %>
+  <div class="container">  
+    <p>
+      <%=  f.label :Nombre %><br>
+      <%= f.text_field :title ,class: "form-control"%>
+    </p>
+    <p>
+      <%=  f.label :Url %><br>
+      <%= f.text_field :title ,class: "form-control"%>
+    </p>
+   
+    <p>
+      <%= type=f.submit value="Crear Lista" %>
+    </p>
+  </div>
+<% end %>
+

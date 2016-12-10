@@ -1,0 +1,19 @@
+<h1>Longtask#create</h1>
+
+<h3>Tareas Largas:</h3>
+<%= form_for :longtask , url: {:controller=>"longtask", :action => 'create'} do |f| %>
+  <div class="container">  
+    <p>
+      <%=  f.label :Descripcion %><br>
+      <%= f.text_field :desc ,class: "form-control"%>
+    </p>
+    <p>
+      <%=  f.label :prioridad %><br>
+      <%= f.text_field :prio ,class: "form-control"%>
+    </p>
+    <p>
+      <%= type=f.submit value="Crear Tarea" %>
+    </p>
+  </div>
+<% end %>
+<p>Find me in app/views/longtask/create.html.erb</p>

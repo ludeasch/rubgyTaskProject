@@ -1,0 +1,18 @@
+<h1>Simpletask#create</h1>
+
+<%= form_for :simpletask , url: {:controller=>"simpletask", :action => 'create'} do |f| %>
+  <div class="container">  
+    <p>
+      <%=  f.label :Descripcion %><br>
+      <%= f.text_field :desc ,class: "form-control"%>
+    </p>
+    <p>
+      <%=  f.label :prioridad %><br>
+      <%= f.text_field :prio ,class: "form-control"%>
+    </p>
+    <p>
+      <%= type=f.submit value="Crear Tarea" %>
+    </p>
+  </div>
+<% end %>
+<p>Find me in app/views/simpletask/create.html.erb</p>
