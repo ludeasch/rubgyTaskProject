@@ -5,7 +5,7 @@
   <div class="container">  
     <p>
       <%=  f.label :Nombre %><br>
-      <%= f.text_field :title ,class: "form-control"%>
+      <%= f.text_field :nombre ,class: "form-control"%>
     </p>
     <p>
       <%=  f.label :Url %><br>
@@ -17,4 +17,19 @@
     </p>
   </div>
 <% end %>
+<h1>Listing articles</h1>
+ 
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
+ 
+  <% @lists.each do |list| %>
+    <tr>
+      <td><%= list.nombre %></td>
+      <td><%= list.url %></td>
+    </tr>
+  <% end %>
+</table>
 

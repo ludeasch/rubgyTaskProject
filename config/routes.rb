@@ -5,9 +5,8 @@ Rails.application.routes.draw do
 
   get 'simpletask/create'
 
-  get '/home/home'
-  resources :listask
-  root :to => "home#home"
+  post '/', to: "listask#create"
+  root to: "listask#home"
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
