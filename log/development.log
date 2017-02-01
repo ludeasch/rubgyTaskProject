@@ -3606,3 +3606,1086 @@ Processing by ListaskController#home as HTML
 Completed 200 OK in 392ms (Views: 362.8ms | ActiveRecord: 4.9ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-01-31 21:35:04 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListaskController#home as HTML
+  [1m[36mListask Load (0.9ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks" WHERE "listasks"."id" IN (NULL, NULL)[0m
+Completed 404 Not Found in 259ms (ActiveRecord: 4.7ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find all Listasks with 'id': (all, {:order=>"id desc", :limit=>5}) (found 0 results, but was looking for 2)):
+  
+app/controllers/listask_controller.rb:3:in `home'
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (48.1ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (16.2ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (228.5ms)
+Started GET "/" for 127.0.0.1 at 2017-01-31 21:36:43 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListaskController#home as HTML
+  [1m[36mListask Load (0.8ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks" WHERE "listasks"."id" IN (NULL, NULL)[0m
+Completed 404 Not Found in 170ms (ActiveRecord: 5.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find all Listasks with 'id': (all, {:order=>"fecha_creacion", :limit=>5}) (found 0 results, but was looking for 2)):
+  
+app/controllers/listask_controller.rb:3:in `home'
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (50.4ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (15.8ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (12.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (213.7ms)
+Started GET "/" for 127.0.0.1 at 2017-01-31 21:37:22 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListaskController#home as HTML
+  [1m[36mListask Load (0.9ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks" WHERE "listasks"."id" IN (NULL, NULL)[0m
+Completed 404 Not Found in 150ms (ActiveRecord: 4.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find all Listasks with 'id': (all, {:limit=>5}) (found 0 results, but was looking for 2)):
+  
+app/controllers/listask_controller.rb:3:in `home'
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (40.2ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (18.0ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (10.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (196.0ms)
+Started GET "/" for 127.0.0.1 at 2017-01-31 21:40:47 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListaskController#home as HTML
+  [1m[36mListask Load (2.3ms)[0m  [1m[34mSELECT  "listasks".* FROM "listasks" ORDER BY "listasks"."id" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  Rendering listask/home.html.erb within layouts/application
+  Rendered listask/home.html.erb within layouts/application (191.6ms)
+Completed 200 OK in 2729ms (Views: 2536.8ms | ActiveRecord: 6.2ms)
+
+
+Started POST "/" for 127.0.0.1 at 2017-01-31 21:41:07 -0300
+Processing by ListaskController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ewcQN/yHJUo/dBbGJ7l7dP0pDP3I84FBvMCVs8IwRENvYs2PRgUA1h1qDrn7X4ReNQX38aHr5vv0Fov74nAk8Q==", "listask"=>{"nombre"=>"bbscsdcds sdcdscdsc dscsdc"}, "commit"=>"Crear Lista"}
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (When assigning attributes, you must pass a hash as an argument.):
+  
+app/controllers/listask_controller.rb:10:in `create'
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (43.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (15.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (172.0ms)
+Started POST "/" for 127.0.0.1 at 2017-01-31 21:42:34 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListaskController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ewcQN/yHJUo/dBbGJ7l7dP0pDP3I84FBvMCVs8IwRENvYs2PRgUA1h1qDrn7X4ReNQX38aHr5vv0Fov74nAk8Q==", "listask"=>{"nombre"=>"bbscsdcds sdcdscdsc dscsdc"}, "commit"=>"Crear Lista"}
+Completed 500 Internal Server Error in 162ms (ActiveRecord: 4.8ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/listask_controller.rb:10:in `create'
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (48.6ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (16.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (187.6ms)
+Started POST "/" for 127.0.0.1 at 2017-01-31 21:43:50 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListaskController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ewcQN/yHJUo/dBbGJ7l7dP0pDP3I84FBvMCVs8IwRENvYs2PRgUA1h1qDrn7X4ReNQX38aHr5vv0Fov74nAk8Q==", "listask"=>{"nombre"=>"bbscsdcds sdcdscdsc dscsdc"}, "commit"=>"Crear Lista"}
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 195ms (ActiveRecord: 5.3ms)
+
+
+  
+NoMethodError (undefined method `slug' for #<Listask:0xb60c358>):
+  
+app/controllers/listask_controller.rb:12:in `create'
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (54.4ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (20.4ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (211.3ms)
+Started GET "/" for 127.0.0.1 at 2017-01-31 21:45:42 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListaskController#home as HTML
+  [1m[36mListask Load (1.3ms)[0m  [1m[34mSELECT  "listasks".* FROM "listasks" ORDER BY "listasks"."id" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  Rendering listask/home.html.erb within layouts/application
+  Rendered listask/home.html.erb within layouts/application (97.3ms)
+Completed 200 OK in 2015ms (Views: 1820.8ms | ActiveRecord: 5.7ms)
+
+
+Started POST "/" for 127.0.0.1 at 2017-01-31 21:45:51 -0300
+Processing by ListaskController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KbYQV7bkrNaNaZBVK9AxIe1RTnjI/92znZIjZmCMU+I9083vDGaJSq93iCr3Ns4LJX21dKHnugnVRD0uQMwzUA==", "listask"=>{"nombre"=>"dds sdasda sdad s"}, "commit"=>"Crear Lista"}
+Unpermitted parameters: utf8, authenticity_token, listask, commit
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-31 21:45:51 -0300
+Processing by ListaskController#home as HTML
+  [1m[36mListask Load (8.6ms)[0m  [1m[34mSELECT  "listasks".* FROM "listasks" ORDER BY "listasks"."id" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  Rendering listask/home.html.erb within layouts/application
+  Rendered listask/home.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 279ms (Views: 248.5ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-31 21:46:07 -0300
+Processing by ListaskController#home as HTML
+  [1m[36mListask Load (1.6ms)[0m  [1m[34mSELECT  "listasks".* FROM "listasks" ORDER BY "listasks"."id" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  Rendering listask/home.html.erb within layouts/application
+  Rendered listask/home.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 352ms (Views: 231.3ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-31 21:48:45 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListaskController#home as HTML
+  [1m[36mListask Load (1.0ms)[0m  [1m[34mSELECT  "listasks".* FROM "listasks" ORDER BY "listasks"."id" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  Rendering listask/home.html.erb within layouts/application
+  Rendered listask/home.html.erb within layouts/application (119.5ms)
+Completed 200 OK in 2059ms (Views: 1859.3ms | ActiveRecord: 5.2ms)
+
+
+Started POST "/" for 127.0.0.1 at 2017-01-31 21:48:53 -0300
+Processing by ListaskController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XanKmljpFJ/6JBVYDDc6rzYEr0yPIZ1JWGaJGL5cWQ9JzBci4msxA9g6DSfQ0cWF/ihUQOY5+vMQsJdQnhw5vQ==", "listask"=>{"nombre"=>"asdahdas adas daaassdads"}, "commit"=>"Crear Lista"}
+Unpermitted parameters: utf8, authenticity_token, listask, commit
+Redirected to http://localhost:3000/
+Completed 302 Found in 19ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-31 21:48:53 -0300
+Processing by ListaskController#home as HTML
+  [1m[36mListask Load (1.6ms)[0m  [1m[34mSELECT  "listasks".* FROM "listasks" ORDER BY "listasks"."id" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  Rendering listask/home.html.erb within layouts/application
+  Rendered listask/home.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 273ms (Views: 257.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-31 21:49:15 -0300
+Processing by ListaskController#home as HTML
+  Rendering listask/home.html.erb within layouts/application
+  [1m[36mListask Load (2.4ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks"[0m
+  Rendered listask/home.html.erb within layouts/application (75.3ms)
+Completed 200 OK in 328ms (Views: 273.5ms | ActiveRecord: 6.7ms)
+
+
+Started POST "/" for 127.0.0.1 at 2017-01-31 21:49:23 -0300
+Processing by ListaskController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gNUnjHKg+Wmu2c2RUGVvBjV1tOn2MItZHdSVe8rPVPeUsPo0yCLc9YzH1e6Mg5As/VlP5Z8o7ONVAosz6o80RQ==", "listask"=>{"nombre"=>"sasdasdasdasdas"}, "commit"=>"Crear Lista"}
+Unpermitted parameters: utf8, authenticity_token, listask, commit
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-31 21:49:23 -0300
+Processing by ListaskController#home as HTML
+  Rendering listask/home.html.erb within layouts/application
+  [1m[36mListask Load (2.0ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks"[0m
+  Rendered listask/home.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 282ms (Views: 271.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-31 21:50:32 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListaskController#home as HTML
+  Rendering listask/home.html.erb within layouts/application
+  [1m[36mListask Load (1.2ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks"[0m
+  Rendered listask/home.html.erb within layouts/application (140.3ms)
+Completed 200 OK in 2038ms (Views: 1893.3ms | ActiveRecord: 4.7ms)
+
+
+Started POST "/" for 127.0.0.1 at 2017-01-31 21:50:40 -0300
+Processing by ListaskController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"idQGTyUFC8uojz50rdt8MMxwqPgIijtAFjiDZHh6A0Gdsdv3n4cuV4qRJgtxPYMaBFxT9GGSXPpe7p0sWDpj8w==", "listask"=>{"nombre"=>"dd adsas dasd"}, "commit"=>"Crear Lista"}
+  [1m[35m (1.6ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 2.0ms)
+
+
+  
+NoMethodError (undefined method `slug' for #<Listask:0xb3143454>):
+  
+app/controllers/listask_controller.rb:12:in `create'
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (63.4ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (23.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (194.8ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to RemoveUrlFromLisTasks (20170201012858)
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "alis_tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar, "url" varchar, "fecha_creacion" date, "ultimo_update" date, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "alis_tasks" ("id","nombre","url","fecha_creacion","ultimo_update","created_at","updated_at")
+                     SELECT "id","nombre","url","fecha_creacion","ultimo_update","created_at","updated_at" FROM "lis_tasks"[0m
+  [1m[35m (9.8ms)[0m  [1m[35mDROP TABLE "lis_tasks"[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "lis_tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar, "fecha_creacion" date, "ultimo_update" date, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "lis_tasks" ("id","nombre","fecha_creacion","ultimo_update","created_at","updated_at")
+                     SELECT "id","nombre","fecha_creacion","ultimo_update","created_at","updated_at" FROM "alis_tasks"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE "alis_tasks"[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170201012858"]]
+  [1m[35m (129.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddSlugToLisTasks (20170201013228)
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.7ms)[0m  [1m[35mALTER TABLE "lis_tasks" ADD "slug" varchar[0m
+  [1m[35mSQL (16.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170201013228"]]
+  [1m[35m (124.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.6ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_simpletasks_on_listask_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_simpletasks_on_listask_id' AND type='index'
+[0m
+  [1m[35m (1.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_task_managers_on_listask_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_task_managers_on_listask_id' AND type='index'
+[0m
+Started GET "/" for 127.0.0.1 at 2017-01-31 22:38:35 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListaskController#home as HTML
+  Rendering listask/home.html.erb within layouts/application
+  [1m[36mListask Load (1.0ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks"[0m
+  Rendered listask/home.html.erb within layouts/application (129.3ms)
+Completed 200 OK in 1988ms (Views: 1863.3ms | ActiveRecord: 4.7ms)
+
+
+Started POST "/" for 127.0.0.1 at 2017-01-31 22:38:43 -0300
+Processing by ListaskController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xdq0RbrM8E2KUjB3XbmWXJU5xQNmfpQHBTqc2S0oHj3Rv2n9AE7V0ahMKAiBX2l2XRU+Dw9m871N7IKRDWh+jw==", "listask"=>{"nombre"=>"dasd adad sadsa"}, "commit"=>"Crear Lista"}
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 0.9ms)
+
+
+  
+NoMethodError (undefined method `slug' for #<Listask:0xb33305a0>):
+  
+app/controllers/listask_controller.rb:12:in `create'
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (49.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (18.4ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (14.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (174.8ms)
+Started POST "/" for 127.0.0.1 at 2017-01-31 22:40:03 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListaskController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xdq0RbrM8E2KUjB3XbmWXJU5xQNmfpQHBTqc2S0oHj3Rv2n9AE7V0ahMKAiBX2l2XRU+Dw9m871N7IKRDWh+jw==", "listask"=>{"nombre"=>"dasd adad sadsa"}, "commit"=>"Crear Lista"}
+Unpermitted parameters: utf8, authenticity_token, listask, commit
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 165ms (ActiveRecord: 5.0ms)
+
+
+  
+NoMethodError (undefined method `slug' for #<Listask:0xc08cdf0>):
+  
+app/controllers/listask_controller.rb:14:in `create'
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (50.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (19.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (183.4ms)
+Started POST "/" for 127.0.0.1 at 2017-01-31 22:41:29 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListaskController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xdq0RbrM8E2KUjB3XbmWXJU5xQNmfpQHBTqc2S0oHj3Rv2n9AE7V0ahMKAiBX2l2XRU+Dw9m871N7IKRDWh+jw==", "listask"=>{"nombre"=>"dasd adad sadsa"}, "commit"=>"Crear Lista"}
+Unpermitted parameters: utf8, authenticity_token, listask, commit
+Redirected to http://localhost:3000/
+Completed 302 Found in 177ms (ActiveRecord: 4.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-31 22:41:30 -0300
+Processing by ListaskController#home as HTML
+  [1m[36mListask Load (1.1ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks"[0m
+  Rendering listask/home.html.erb within layouts/application
+  Rendered listask/home.html.erb within layouts/application (75.8ms)
+Completed 200 OK in 1768ms (Views: 1755.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-31 22:42:49 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListaskController#home as HTML
+  [1m[36mListask Load (1.0ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks"[0m
+Completed 500 Internal Server Error in 172ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `json' for #<Listask::ActiveRecord_Relation:0xc06e044>):
+  
+app/controllers/listask_controller.rb:4:in `home'
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (37.1ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (15.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (164.4ms)
+Started GET "/" for 127.0.0.1 at 2017-01-31 22:43:35 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListaskController#home as HTML
+  [1m[36mListask Load (1.0ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks"[0m
+  Rendering listask/home.html.erb within layouts/application
+  Rendered listask/home.html.erb within layouts/application (90.5ms)
+Completed 200 OK in 1952ms (Views: 1785.3ms | ActiveRecord: 5.1ms)
+
+
+Started POST "/" for 127.0.0.1 at 2017-01-31 22:43:50 -0300
+Processing by ListaskController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BGfOda7ORND44XqRUcUTEzS/rrbQUXJNTvFppGWnODUQAhPNFExhTNr/Yu6NI+w5/JNVurlJFfcGJ3fsRedYhw==", "listask"=>{"nombre"=>"cas asd asd"}, "commit"=>"Crear Lista"}
+Unpermitted parameters: utf8, authenticity_token, listask, commit
+Redirected to http://localhost:3000/
+Completed 302 Found in 15ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-31 22:43:50 -0300
+Processing by ListaskController#home as HTML
+  [1m[36mListask Load (1.6ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks"[0m
+  Rendering listask/home.html.erb within layouts/application
+  Rendered listask/home.html.erb within layouts/application (25.4ms)
+Completed 200 OK in 283ms (Views: 242.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-31 22:44:45 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListaskController#home as HTML
+  [1m[36mListask Load (1.0ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks"[0m
+  Rendering listask/home.html.erb within layouts/application
+  Rendered listask/home.html.erb within layouts/application (101.2ms)
+Completed 200 OK in 2176ms (Views: 2001.3ms | ActiveRecord: 5.2ms)
+
+
+Started POST "/" for 127.0.0.1 at 2017-01-31 22:44:52 -0300
+Processing by ListaskController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xaEAV4BRXi00HEiMg6Qgt+kxssAk7Vfv3kEJBLnQbT3RxN3vOtN7sRYCUPNfQt+dIR1JzE31MFWWlxdMmZANjw==", "listask"=>{"nombre"=>"asdasd  ad"}, "commit"=>"Crear Lista"}
+Unpermitted parameters: utf8, authenticity_token, listask, commit
+Redirected to http://localhost:3000/
+Completed 302 Found in 23ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-31 22:44:52 -0300
+Processing by ListaskController#home as HTML
+  [1m[36mListask Load (1.2ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks"[0m
+  Rendering listask/home.html.erb within layouts/application
+  Rendered listask/home.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 283ms (Views: 257.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-31 22:46:42 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListaskController#home as HTML
+  [1m[36mListask Load (0.9ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks"[0m
+  Rendering listask/home.html.erb within layouts/application
+  Rendered listask/home.html.erb within layouts/application (89.0ms)
+Completed 200 OK in 1888ms (Views: 1729.4ms | ActiveRecord: 4.6ms)
+
+
+Started POST "/" for 127.0.0.1 at 2017-01-31 22:46:50 -0300
+Processing by ListaskController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GDeE453vK5FvhyuJQWJyediBVQtycBkVK52PAHDOmqYMUllbJ20ODU2ZM/adhI1TEK2uBxtofq9jS5FIUI76FA==", "listask"=>{"nombre"=>"sdfs s fdsfsdffds"}, "commit"=>"Crear Lista"}
+Unpermitted parameters: utf8, authenticity_token, listask, commit
+Redirected to http://localhost:3000/
+Completed 302 Found in 33ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-31 22:46:50 -0300
+Processing by ListaskController#home as HTML
+  [1m[36mListask Load (11.3ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks"[0m
+  Rendering listask/home.html.erb within layouts/application
+  Rendered listask/home.html.erb within layouts/application (24.4ms)
+Completed 200 OK in 278ms (Views: 248.1ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-31 22:48:01 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListaskController#home as HTML
+  [1m[36mListask Load (0.9ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks"[0m
+  Rendering listask/home.html.erb within layouts/application
+  Rendered listask/home.html.erb within layouts/application (88.1ms)
+Completed 200 OK in 1933ms (Views: 1772.0ms | ActiveRecord: 4.7ms)
+
+
+Started POST "/" for 127.0.0.1 at 2017-01-31 22:48:09 -0300
+Processing by ListaskController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1g7XRtFakkefJ2Gj85OAchVmKhgd68Ais+v22KKO5hLCawr+a9i32705edwvdX9Y3UrRFHTzp5j7PeiQgs6GoA==", "listask"=>{"nombre"=>"sfdsdf sdsfdsfdsfsd"}, "commit"=>"Crear Lista"}
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/listask_controller.rb:11:in `create'
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (37.0ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (17.1ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (147.3ms)
+Started GET "/" for 127.0.0.1 at 2017-01-31 22:50:59 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListaskController#home as HTML
+  [1m[36mListask Load (1.0ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks"[0m
+  Rendering listask/home.html.erb within layouts/application
+  Rendered listask/home.html.erb within layouts/application (89.1ms)
+Completed 200 OK in 1948ms (Views: 1785.9ms | ActiveRecord: 4.8ms)
+
+
+Started POST "/" for 127.0.0.1 at 2017-01-31 22:51:06 -0300
+Processing by ListaskController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xDAvJ3BWlr1H2R1Y1RKNDvMOvIRxj8g+B/2Yz/LeCTLQVfKfytSzIWXHBScJ9HIkOyJHiBiXr4RPK4aH0p5pgA==", "listask"=>{"nombre"=>"asds asdasdasdsad asd"}, "commit"=>"Crear Lista"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 30ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-31 22:51:07 -0300
+Processing by ListaskController#home as HTML
+  [1m[36mListask Load (1.3ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks"[0m
+  Rendering listask/home.html.erb within layouts/application
+  Rendered listask/home.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 232ms (Views: 221.3ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/" for 127.0.0.1 at 2017-01-31 22:52:00 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListaskController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"94FSwfUmtJieD/fK0BZglljRmQr+wxzzfT+p/VnvbaHj5I95T6SRBLwR77UM8J+8kP1iBpfbe0k16be1ea8NEw==", "listask"=>{"nombre"=>"asdas dd  d ddd"}, "commit"=>"Crear Lista"}
+Completed 500 Internal Server Error in 163ms (ActiveRecord: 4.3ms)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/listask_controller.rb:13:in `create'
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (37.2ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (16.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (167.3ms)
+Started GET "/" for 127.0.0.1 at 2017-01-31 22:53:15 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListaskController#home as HTML
+  [1m[36mListask Load (1.1ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks"[0m
+  Rendering listask/home.html.erb within layouts/application
+  Rendered listask/home.html.erb within layouts/application (89.8ms)
+Completed 200 OK in 1964ms (Views: 1803.5ms | ActiveRecord: 4.8ms)
+
+
+Started POST "/" for 127.0.0.1 at 2017-01-31 22:53:23 -0300
+Processing by ListaskController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JLwpC0at38c7rwhnlhJnV8vZM6z5uBhIITOZyLyhGysw2fSz/C/6WxmxEBhK9Jh9A/XIoJCgf/Jp5YeAnOF7mQ==", "listask"=>{"nombre"=>"dsd ff  ff f"}, "commit"=>"Crear Lista"}
+Unpermitted parameters: utf8, authenticity_token, listask, commit
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.7ms)
+
+
+  
+NoMethodError (undefined method `slug' for #<Listask:0xc46f670>):
+  
+app/controllers/listask_controller.rb:12:in `create'
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (51.4ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (21.0ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (169.5ms)
+Started GET "/" for 127.0.0.1 at 2017-01-31 22:57:24 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListaskController#home as HTML
+Completed 500 Internal Server Error in 164ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (wrong argument type Class (expected Module)):
+  
+app/models/listask.rb:10:in `<class:Listask>'
+app/models/listask.rb:1:in `<top (required)>'
+app/controllers/listask_controller.rb:3:in `home'
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (65.5ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (17.5ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (196.4ms)
+Started GET "/" for 127.0.0.1 at 2017-01-31 22:58:00 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListaskController#home as HTML
+Completed 500 Internal Server Error in 119ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (wrong argument type Class (expected Module)):
+  
+app/models/listask.rb:10:in `<class:Listask>'
+app/models/listask.rb:1:in `<top (required)>'
+app/controllers/listask_controller.rb:3:in `home'
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (45.0ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (17.4ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (183.4ms)
+Started GET "/" for 127.0.0.1 at 2017-01-31 23:01:37 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListaskController#home as HTML
+Completed 500 Internal Server Error in 104ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant FriendlyId::Slugger):
+  
+app/models/listask.rb:10:in `<class:Listask>'
+app/models/listask.rb:1:in `<top (required)>'
+app/controllers/listask_controller.rb:3:in `home'
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (40.5ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (16.9ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (164.0ms)
+Started GET "/" for 127.0.0.1 at 2017-01-31 23:02:56 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListaskController#home as HTML
+  [1m[36mListask Load (1.0ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks"[0m
+  Rendering listask/home.html.erb within layouts/application
+  Rendered listask/home.html.erb within layouts/application (88.4ms)
+Completed 200 OK in 1919ms (Views: 1755.0ms | ActiveRecord: 4.7ms)
+
+
+Started POST "/" for 127.0.0.1 at 2017-01-31 23:03:03 -0300
+Processing by ListaskController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6hsZ6Zd79e4GTeFbevaag8d/pQQEqs8CGO6sYBusmG3+fsRRLfnQciRT+SSmEGWpD1NeCG2yqLhQOLIoO+z43w==", "listask"=>{"nombre"=>"adasdsad"}, "commit"=>"Crear Lista"}
+Unpermitted parameters: utf8, authenticity_token, listask, commit
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.8ms)
+
+
+  
+NoMethodError (undefined method `slug' for #<Listask:0xbbf3514>):
+  
+app/controllers/listask_controller.rb:12:in `create'
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (49.5ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (18.2ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (156.7ms)
+Started GET "/" for 127.0.0.1 at 2017-01-31 23:04:50 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListaskController#home as HTML
+  Rendering listask/home.html.erb within layouts/application
+  [1m[36mListask Load (1.0ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks"[0m
+  Rendered listask/home.html.erb within layouts/application (136.2ms)
+Completed 200 OK in 1965ms (Views: 1837.9ms | ActiveRecord: 5.1ms)
+
+
+Started POST "/" for 127.0.0.1 at 2017-01-31 23:04:57 -0300
+Processing by ListaskController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ntDda6ONfPeOZ/NdUs3M31TDbejCjDWIpHMRuelMHlOKtQDTGQ9Za6x56yKOKzP1nO+W5KuUUjLspQ/xyQx+4Q==", "listask"=>{"nombre"=>"ass d sd s"}, "commit"=>"Crear Lista"}
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.8ms)
+
+
+  
+NoMethodError (undefined method `slug' for #<Listask:0xb5a4f870>):
+  
+app/controllers/listask_controller.rb:12:in `create'
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (50.5ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (19.1ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (165.0ms)
+Started GET "/" for 127.0.0.1 at 2017-01-31 23:06:24 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListaskController#home as HTML
+  Rendering listask/home.html.erb within layouts/application
+  [1m[36mListask Load (1.0ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks"[0m
+  Rendered listask/home.html.erb within layouts/application (145.9ms)
+Completed 500 Internal Server Error in 286ms (ActiveRecord: 4.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `slug' for #<Listask:0xb2ff584>):
+    23:       <% @lists.each do |list| %>
+    24:         <tr>
+    25:           <td><%= list.nombre %></td>
+    26:           <td><a href=<%= list.slug %>><%= list.slug %></a></td>
+    27:         </tr>
+    28:       <% end %>
+    29:     </tbody>
+  
+app/views/listask/home.html.erb:26:in `block in _app_views_listask_home_html_erb__693331648_94479640'
+app/views/listask/home.html.erb:23:in `_app_views_listask_home_html_erb__693331648_94479640'
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (52.4ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (21.9ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (172.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_simpletasks_on_listask_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_simpletasks_on_listask_id' AND type='index'
+[0m
+  [1m[35m (0.6ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_task_managers_on_listask_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_task_managers_on_listask_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.6ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_simpletasks_on_listask_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_simpletasks_on_listask_id' AND type='index'
+[0m
+  [1m[35m (0.6ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_task_managers_on_listask_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_task_managers_on_listask_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_simpletasks_on_listask_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_simpletasks_on_listask_id' AND type='index'
+[0m
+  [1m[35m (0.6ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_task_managers_on_listask_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_task_managers_on_listask_id' AND type='index'
+[0m
+Started GET "/" for 127.0.0.1 at 2017-01-31 23:08:31 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListaskController#home as HTML
+  Rendering listask/home.html.erb within layouts/application
+  [1m[36mListask Load (1.0ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks"[0m
+  Rendered listask/home.html.erb within layouts/application (151.1ms)
+Completed 500 Internal Server Error in 317ms (ActiveRecord: 4.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `slug' for #<Listask:0xac244bc>):
+    23:       <% @lists.each do |list| %>
+    24:         <tr>
+    25:           <td><%= list.nombre %></td>
+    26:           <td><a href=<%= list.slug %>><%= list.slug %></a></td>
+    27:         </tr>
+    28:       <% end %>
+    29:     </tbody>
+  
+app/views/listask/home.html.erb:26:in `block in _app_views_listask_home_html_erb__727779206_90884530'
+app/views/listask/home.html.erb:23:in `_app_views_listask_home_html_erb__727779206_90884530'
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (52.5ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (20.2ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (165.6ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+DEPRECATION WARNING: Passing #original_exception is deprecated and has no effect. Exceptions will automatically capture the original exception. (called from load at /usr/local/rvm/gems/ruby-2.2.4/bin/rake:23)
+  [1m[35m (332.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (326.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateLisTasks (20161209190654)
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE TABLE "lis_tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar, "url" varchar, "fecha_creacion" date, "ultimo_update" date, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161209190654"]]
+  [1m[35m (342.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateListasks (20161209220110)
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "listasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar, "url" varchar, "fecha_creacion" date, "ultimo_update" date, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161209220110"]]
+  [1m[35m (323.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateTaskManagers (20161210032710)
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE TABLE "task_managers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "descripcion" varchar, "estado" varchar, "listask_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_task_managers_on_listask_id" ON "task_managers" ("listask_id")[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161210032710"]]
+  [1m[35m (280.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateLongtasks (20161210032815)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE "longtasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "porcentaje" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161210032815"]]
+  [1m[35m (318.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateSimpletasks (20161210032933)
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (7.0ms)[0m  [1m[35mCREATE TABLE "simpletasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "descripcion" varchar, "estado" varchar, "prioridad" varchar, "listask_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX "index_simpletasks_on_listask_id" ON "simpletasks" ("listask_id")[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161210032933"]]
+  [1m[35m (300.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateTemporaltasks (20161210033010)
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (8.6ms)[0m  [1m[35mCREATE TABLE "temporaltasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fecha_validez" date, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161210033010"]]
+  [1m[35m (323.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to RemoveUrlFromLisTasks (20170201012858)
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TEMPORARY TABLE "alis_tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar, "url" varchar, "fecha_creacion" date, "ultimo_update" date, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "alis_tasks" ("id","nombre","url","fecha_creacion","ultimo_update","created_at","updated_at")
+                     SELECT "id","nombre","url","fecha_creacion","ultimo_update","created_at","updated_at" FROM "lis_tasks"[0m
+  [1m[35m (4.2ms)[0m  [1m[35mDROP TABLE "lis_tasks"[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "lis_tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar, "fecha_creacion" date, "ultimo_update" date, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[32mINSERT INTO "lis_tasks" ("id","nombre","fecha_creacion","ultimo_update","created_at","updated_at")
+                     SELECT "id","nombre","fecha_creacion","ultimo_update","created_at","updated_at" FROM "alis_tasks"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE "alis_tasks"[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170201012858"]]
+  [1m[35m (348.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddSlugToLisTasks (20170201013228)
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.4ms)[0m  [1m[35mALTER TABLE "lis_tasks" ADD "slug" varchar[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170201013228"]]
+  [1m[35m (304.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-02-01 02:09:41 UTC], ["updated_at", 2017-02-01 02:09:41 UTC]]
+  [1m[35m (354.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_simpletasks_on_listask_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_simpletasks_on_listask_id' AND type='index'
+[0m
+  [1m[35m (0.6ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_task_managers_on_listask_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_task_managers_on_listask_id' AND type='index'
+[0m
+Started GET "/" for 127.0.0.1 at 2017-01-31 23:10:11 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListaskController#home as HTML
+  Rendering listask/home.html.erb within layouts/application
+  [1m[36mListask Load (0.7ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks"[0m
+  Rendered listask/home.html.erb within layouts/application (95.1ms)
+Completed 200 OK in 1823ms (Views: 1704.7ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2017-01-31 23:10:18 -0300
+Processing by ListaskController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kxATiOhALopWfnzQRBVoAbCGAbbdJVvz1+tymxO3sTWHdc4wUsILFnRgZK+Y85creKr6urQ9PEmfPWzTM/fRhw==", "listask"=>{"nombre"=>"asdsad asdd  dsd"}, "commit"=>"Crear Lista"}
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 76ms (ActiveRecord: 3.5ms)
+
+
+  
+NoMethodError (undefined method `slug' for #<Listask:0xb5a4ce90>):
+  
+app/controllers/listask_controller.rb:12:in `create'
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (51.1ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (20.2ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (166.6ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+  [1m[35m (172.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (135.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateLisTasks (20161209190654)
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "lis_tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar, "url" varchar, "fecha_creacion" date, "ultimo_update" date, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161209190654"]]
+  [1m[35m (119.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateListasks (20161209220110)
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "listasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar, "url" varchar, "fecha_creacion" date, "ultimo_update" date, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161209220110"]]
+  [1m[35m (133.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateTaskManagers (20161210032710)
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "task_managers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "descripcion" varchar, "estado" varchar, "listask_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_task_managers_on_listask_id" ON "task_managers" ("listask_id")[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161210032710"]]
+  [1m[35m (152.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateLongtasks (20161210032815)
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE TABLE "longtasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "porcentaje" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161210032815"]]
+  [1m[35m (198.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateSimpletasks (20161210032933)
+  [1m[35m (1.8ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE "simpletasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "descripcion" varchar, "estado" varchar, "prioridad" varchar, "listask_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX "index_simpletasks_on_listask_id" ON "simpletasks" ("listask_id")[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161210032933"]]
+  [1m[35m (174.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateTemporaltasks (20161210033010)
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "temporaltasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fecha_validez" date, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161210033010"]]
+  [1m[35m (162.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddSlugToListask (20170201021347)
+  [1m[35m (4.6ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.7ms)[0m  [1m[35mALTER TABLE "listasks" ADD "slug" varchar[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170201021347"]]
+  [1m[35m (113.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (6.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-02-01 02:14:40 UTC], ["updated_at", 2017-02-01 02:14:40 UTC]]
+  [1m[35m (120.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.6ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_simpletasks_on_listask_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_simpletasks_on_listask_id' AND type='index'
+[0m
+  [1m[35m (0.6ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_task_managers_on_listask_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_task_managers_on_listask_id' AND type='index'
+[0m
+Started GET "/" for 127.0.0.1 at 2017-01-31 23:16:17 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListaskController#home as HTML
+  Rendering listask/home.html.erb within layouts/application
+  [1m[36mListask Load (0.8ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks"[0m
+  Rendered listask/home.html.erb within layouts/application (95.5ms)
+Completed 200 OK in 1912ms (Views: 1792.8ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/" for 127.0.0.1 at 2017-01-31 23:16:26 -0300
+Processing by ListaskController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RuabUQ1GLfbqKFvuyL5oLiSbTvbzNSXWHGQYuQBEwRhSg0bpt8QIasg2Q5EUWJcE7Le1+potQmxUsgbxIAShqg==", "listask"=>{"nombre"=>"fdf  fd  dfddf"}, "commit"=>"Crear Lista"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 87ms (ActiveRecord: 5.2ms)
+
+
+  
+NoMethodError (undefined method `name' for #<Listask:0xb5a49650>):
+  
+app/controllers/listask_controller.rb:12:in `create'
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (50.4ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (18.3ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (160.5ms)
+Started POST "/" for 127.0.0.1 at 2017-01-31 23:17:22 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListaskController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RuabUQ1GLfbqKFvuyL5oLiSbTvbzNSXWHGQYuQBEwRhSg0bpt8QIasg2Q5EUWJcE7Le1+potQmxUsgbxIAShqg==", "listask"=>{"nombre"=>"fdf  fd  dfddf"}, "commit"=>"Crear Lista"}
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mListask Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "listasks" WHERE ("listasks"."id" IS NOT NULL) AND "listasks"."slug" = ? LIMIT ?[0m  [["slug", "fdf-fd-dfddf"], ["LIMIT", 1]]
+  [1m[36mListask Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "listasks" WHERE "listasks"."slug" = ? LIMIT ?[0m  [["slug", "fdf-fd-dfddf"], ["LIMIT", 1]]
+  [1m[35mSQL (3.4ms)[0m  [1m[32mINSERT INTO "listasks" ("nombre", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?)[0m  [["nombre", "fdf  fd  dfddf"], ["created_at", 2017-02-01 02:17:24 UTC], ["updated_at", 2017-02-01 02:17:24 UTC], ["slug", "fdf-fd-dfddf"]]
+  [1m[35m (136.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 1249ms (ActiveRecord: 145.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-31 23:17:24 -0300
+Processing by ListaskController#home as HTML
+  Rendering listask/home.html.erb within layouts/application
+  [1m[36mListask Load (1.1ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks"[0m
+  Rendered listask/home.html.erb within layouts/application (76.9ms)
+Completed 200 OK in 1517ms (Views: 1509.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-31 23:20:10 -0300
+Processing by ListaskController#home as HTML
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `latest' for #<Class:0x9268d84>):
+  
+app/controllers/listask_controller.rb:3:in `home'
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (46.8ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (17.3ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (157.8ms)
+Started GET "/" for 127.0.0.1 at 2017-01-31 23:20:21 -0300
+Processing by ListaskController#home as HTML
+  [1m[36mListask Load (0.9ms)[0m  [1m[34mSELECT  "listasks".* FROM "listasks" ORDER BY "listasks"."id" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  Rendering listask/home.html.erb within layouts/application
+  Rendered listask/home.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 336ms (Views: 215.8ms | ActiveRecord: 6.6ms)
+
+
+Started POST "/" for 127.0.0.1 at 2017-01-31 23:20:34 -0300
+Processing by ListaskController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+ABRko23bi+rt9iQza2zqMKKj9amEFfZTxyMxw2tYEHsZYwqNzVLs4mpwO8RS0yCCqZ02s8IMGMHypKPLe0A8w==", "listask"=>{"nombre"=>"como son las cosas "}, "commit"=>"Crear Lista"}
+  [1m[35m (2.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mListask Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "listasks" WHERE ("listasks"."id" IS NOT NULL) AND "listasks"."slug" = ? LIMIT ?[0m  [["slug", "como-son-las-cosas"], ["LIMIT", 1]]
+  [1m[36mListask Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "listasks" WHERE "listasks"."slug" = ? LIMIT ?[0m  [["slug", "como-son-las-cosas"], ["LIMIT", 1]]
+  [1m[35mSQL (25.0ms)[0m  [1m[32mINSERT INTO "listasks" ("nombre", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?)[0m  [["nombre", "como son las cosas "], ["created_at", 2017-02-01 02:20:34 UTC], ["updated_at", 2017-02-01 02:20:34 UTC], ["slug", "como-son-las-cosas"]]
+  [1m[35m (155.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 249ms (ActiveRecord: 183.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-31 23:20:35 -0300
+Processing by ListaskController#home as HTML
+  [1m[36mListask Load (2.5ms)[0m  [1m[34mSELECT  "listasks".* FROM "listasks" ORDER BY "listasks"."id" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  Rendering listask/home.html.erb within layouts/application
+  Rendered listask/home.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 363ms (Views: 349.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/fdf-fd-dfddf" for 127.0.0.1 at 2017-01-31 23:20:39 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/fdf-fd-dfddf"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (15.7ms)
+  Rendered collection of /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [5 times] (49.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (26.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (229.9ms)

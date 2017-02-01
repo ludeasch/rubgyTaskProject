@@ -8,11 +8,6 @@
       <%= f.text_field :nombre ,class: "form-control"%>
     </p>
     <p>
-      <%=  f.label :Url %><br>
-      <%= f.text_field :title ,class: "form-control"%>
-    </p>
-   
-    <p>
       <%= type=f.submit value="Crear Lista" %>
     </p>
 <% end %>
@@ -28,7 +23,7 @@
       <% @lists.each do |list| %>
         <tr>
           <td><%= list.nombre %></td>
-          <td><a href=<%= list.url %>><%= list.url %></a></td>
+          <td><a href=<%= list.slug %>><%= list.slug %></a></td>
         </tr>
       <% end %>
     </tbody>
