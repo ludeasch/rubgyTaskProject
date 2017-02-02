@@ -10,8 +10,12 @@ class ListaskController < ApplicationController
 		@list = Listask.new()
 		@list.nombre = params[:listask]['nombre']
 		@list.save
-		redirect_to controller: "listask", action: "home"
+		redirect_to controller: "listask", action: "details", slug: @list.slug
 		
+	end
+
+	def details
+       @listd = Listask.where("slug = ? ", params['slug'])[0].taskmanager
 	end
 
 

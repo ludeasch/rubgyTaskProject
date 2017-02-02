@@ -23,7 +23,7 @@
       <% @lists.each do |list| %>
         <tr>
           <td><%= list.nombre %></td>
-          <td><a href=<%= list.slug %>><%= list.slug %></a></td>
+          <td><a href="/<%=list.slug %>"><%= list.slug %></a></td>
         </tr>
       <% end %>
     </tbody>

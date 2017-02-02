@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get 'longtask/create'
 
   get 'simpletask/create'
-
+  get '/:slug', to: 'listask#details'
   post '/', to: "listask#create"
   root to: "listask#home"
 
