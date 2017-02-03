@@ -15,7 +15,8 @@ class ListaskController < ApplicationController
 	end
 
 	def details
-       @listd = Listask.where("slug = ? ", params['slug'])[0].taskmanager
+       @listd = Listask.where("slug = ? ", params['slug'])[0]
+       puts @listd.inspect
 	end
 
 

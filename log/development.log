@@ -5182,3 +5182,255 @@ Started PUT "/__web_console/repl_sessions/6ed935397ae15f0d0881e8acabe37653" for 
 Started PUT "/__web_console/repl_sessions/6ed935397ae15f0d0881e8acabe37653" for 127.0.0.1 at 2017-02-01 23:31:06 -0300
 Started PUT "/__web_console/repl_sessions/6ed935397ae15f0d0881e8acabe37653" for 127.0.0.1 at 2017-02-01 23:31:07 -0300
 Started PUT "/__web_console/repl_sessions/6ed935397ae15f0d0881e8acabe37653" for 127.0.0.1 at 2017-02-01 23:31:09 -0300
+Started GET "/" for 127.0.0.1 at 2017-02-02 20:13:43 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListaskController#home as HTML
+  [1m[36mListask Load (1.3ms)[0m  [1m[34mSELECT  "listasks".* FROM "listasks" ORDER BY "listasks"."id" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  Rendering listask/home.html.erb within layouts/application
+  Rendered listask/home.html.erb within layouts/application (181.1ms)
+Started GET "/fdf-fd-dfddf" for 127.0.0.1 at 2017-02-02 20:13:44 -0300
+Processing by ListaskController#details as HTML
+  Parameters: {"slug"=>"fdf-fd-dfddf"}
+  [1m[36mListask Load (1.9ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks" WHERE (slug = 'fdf-fd-dfddf' )[0m
+  Rendering listask/details.html.erb within layouts/application
+Completed 200 OK in 2663ms (Views: 2403.8ms | ActiveRecord: 4.8ms)
+
+
+  [1m[36mSimpletask Load (0.9ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  [1m[36mCACHE (2.7ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  Rendered listask/details.html.erb within layouts/application (1231.5ms)
+Completed 200 OK in 1851ms (Views: 1726.3ms | ActiveRecord: 20.2ms)
+
+
+Started GET "/fdf-fd-dfddf" for 127.0.0.1 at 2017-02-02 20:14:33 -0300
+Processing by ListaskController#details as HTML
+  Parameters: {"slug"=>"fdf-fd-dfddf"}
+  [1m[36mListask Load (0.9ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks" WHERE (slug = 'fdf-fd-dfddf' )[0m
+  Rendering listask/details.html.erb within layouts/application
+  [1m[36mSimpletask Load (1.1ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  Rendered listask/details.html.erb within layouts/application (25.7ms)
+Completed 200 OK in 223ms (Views: 205.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/fdf-fd-dfddf" for 127.0.0.1 at 2017-02-02 20:14:59 -0300
+Processing by ListaskController#details as HTML
+  Parameters: {"slug"=>"fdf-fd-dfddf"}
+  [1m[36mListask Load (1.9ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks" WHERE (slug = 'fdf-fd-dfddf' )[0m
+  Rendering listask/details.html.erb within layouts/application
+  [1m[36mSimpletask Load (5.3ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  [1m[36mCACHE (1.6ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  Rendered listask/details.html.erb within layouts/application (35.5ms)
+Completed 200 OK in 270ms (Views: 237.6ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/fdf-fd-dfddf" for 127.0.0.1 at 2017-02-02 20:15:35 -0300
+Processing by ListaskController#details as HTML
+  Parameters: {"slug"=>"fdf-fd-dfddf"}
+  [1m[36mListask Load (1.9ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks" WHERE (slug = 'fdf-fd-dfddf' )[0m
+  Rendering listask/details.html.erb within layouts/application
+  [1m[36mSimpletask Load (1.7ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  Rendered listask/details.html.erb within layouts/application (49.9ms)
+Completed 200 OK in 275ms (Views: 244.5ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/fdf-fd-dfddf" for 127.0.0.1 at 2017-02-02 20:15:52 -0300
+Processing by ListaskController#details as HTML
+  Parameters: {"slug"=>"fdf-fd-dfddf"}
+  [1m[36mListask Load (8.6ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks" WHERE (slug = 'fdf-fd-dfddf' )[0m
+  Rendering listask/details.html.erb within layouts/application
+  [1m[36mSimpletask Load (0.8ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  Rendered listask/details.html.erb within layouts/application (43.9ms)
+Completed 200 OK in 297ms (Views: 249.6ms | ActiveRecord: 9.6ms)
+
+
+Started GET "/fdf-fd-dfddf" for 127.0.0.1 at 2017-02-02 20:17:19 -0300
+Processing by ListaskController#details as HTML
+  Parameters: {"slug"=>"fdf-fd-dfddf"}
+  [1m[36mListask Load (1.1ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks" WHERE (slug = 'fdf-fd-dfddf' )[0m
+  Rendering listask/details.html.erb within layouts/application
+  [1m[36mSimpletask Load (0.8ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  [1m[36mCACHE (0.2ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  Rendered listask/details.html.erb within layouts/application (41.1ms)
+Completed 200 OK in 277ms (Views: 245.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/fdf-fd-dfddf" for 127.0.0.1 at 2017-02-02 20:17:58 -0300
+Processing by ListaskController#details as HTML
+  Parameters: {"slug"=>"fdf-fd-dfddf"}
+  [1m[36mListask Load (6.2ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks" WHERE (slug = 'fdf-fd-dfddf' )[0m
+  Rendering listask/details.html.erb within layouts/application
+  [1m[36mSimpletask Load (0.8ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  Rendered listask/details.html.erb within layouts/application (27.6ms)
+Completed 200 OK in 302ms (Views: 275.2ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/fdf-fd-dfddf" for 127.0.0.1 at 2017-02-02 20:23:54 -0300
+Processing by ListaskController#details as HTML
+  Parameters: {"slug"=>"fdf-fd-dfddf"}
+  [1m[36mListask Load (3.8ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks" WHERE (slug = 'fdf-fd-dfddf' )[0m
+  Rendering listask/details.html.erb within layouts/application
+  [1m[36mSimpletask Load (0.9ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  Rendered listask/details.html.erb within layouts/application (22.8ms)
+Completed 200 OK in 278ms (Views: 229.1ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/fdf-fd-dfddf" for 127.0.0.1 at 2017-02-02 20:24:23 -0300
+Processing by ListaskController#details as HTML
+  Parameters: {"slug"=>"fdf-fd-dfddf"}
+  [1m[36mListask Load (9.4ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks" WHERE (slug = 'fdf-fd-dfddf' )[0m
+  Rendering listask/details.html.erb within layouts/application
+  [1m[36mSimpletask Load (0.8ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  Rendered listask/details.html.erb within layouts/application (44.3ms)
+Completed 200 OK in 296ms (Views: 255.5ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/fdf-fd-dfddf" for 127.0.0.1 at 2017-02-02 20:24:24 -0300
+Processing by ListaskController#details as HTML
+  Parameters: {"slug"=>"fdf-fd-dfddf"}
+  [1m[36mListask Load (0.7ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks" WHERE (slug = 'fdf-fd-dfddf' )[0m
+  Rendering listask/details.html.erb within layouts/application
+  [1m[36mSimpletask Load (1.1ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  Rendered listask/details.html.erb within layouts/application (33.3ms)
+Completed 200 OK in 241ms (Views: 229.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/fdf-fd-dfddf" for 127.0.0.1 at 2017-02-02 20:29:35 -0300
+Processing by ListaskController#details as HTML
+  Parameters: {"slug"=>"fdf-fd-dfddf"}
+  [1m[36mListask Load (11.1ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks" WHERE (slug = 'fdf-fd-dfddf' )[0m
+  Rendering listask/details.html.erb within layouts/application
+  [1m[36mSimpletask Load (0.9ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  Rendered listask/details.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 230ms (Views: 203.4ms | ActiveRecord: 12.3ms)
+
+
+Started GET "/fdf-fd-dfddf" for 127.0.0.1 at 2017-02-02 20:30:26 -0300
+Processing by ListaskController#details as HTML
+  Parameters: {"slug"=>"fdf-fd-dfddf"}
+  [1m[36mListask Load (0.9ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks" WHERE (slug = 'fdf-fd-dfddf' )[0m
+  Rendering listask/details.html.erb within layouts/application
+  [1m[36mSimpletask Load (0.8ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  Rendered listask/details.html.erb within layouts/application (75.1ms)
+Completed 200 OK in 279ms (Views: 260.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/fdf-fd-dfddf" for 127.0.0.1 at 2017-02-02 20:30:44 -0300
+Processing by ListaskController#details as HTML
+  Parameters: {"slug"=>"fdf-fd-dfddf"}
+  [1m[36mListask Load (0.9ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks" WHERE (slug = 'fdf-fd-dfddf' )[0m
+  Rendering listask/details.html.erb within layouts/application
+  [1m[36mSimpletask Load (8.7ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  Rendered listask/details.html.erb within layouts/application (42.3ms)
+Completed 200 OK in 265ms (Views: 226.7ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/fdf-fd-dfddf" for 127.0.0.1 at 2017-02-02 21:43:08 -0300
+Processing by ListaskController#details as HTML
+  Parameters: {"slug"=>"fdf-fd-dfddf"}
+  [1m[36mListask Load (1.0ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks" WHERE (slug = 'fdf-fd-dfddf' )[0m
+  Rendering listask/details.html.erb within layouts/application
+  [1m[36mSimpletask Load (0.8ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  Rendered listask/details.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 269ms (Views: 231.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/fdf-fd-dfddf" for 127.0.0.1 at 2017-02-02 21:44:07 -0300
+Processing by ListaskController#details as HTML
+  Parameters: {"slug"=>"fdf-fd-dfddf"}
+  [1m[36mListask Load (2.2ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks" WHERE (slug = 'fdf-fd-dfddf' )[0m
+  Rendering listask/details.html.erb within layouts/application
+  [1m[36mSimpletask Load (1.1ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  [1m[36mLongtask Load (0.4ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  [1m[36mTemporaltask Load (0.4ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  Rendered listask/details.html.erb within layouts/application (71.8ms)
+Completed 200 OK in 354ms (Views: 265.8ms | ActiveRecord: 9.6ms)
+
+
+Started GET "/fdf-fd-dfddf" for 127.0.0.1 at 2017-02-02 21:44:22 -0300
+Processing by ListaskController#details as HTML
+  Parameters: {"slug"=>"fdf-fd-dfddf"}
+  [1m[36mListask Load (2.4ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks" WHERE (slug = 'fdf-fd-dfddf' )[0m
+  Rendering listask/details.html.erb within layouts/application
+  [1m[36mSimpletask Load (0.8ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  [1m[36mLongtask Load (0.4ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  [1m[36mTemporaltask Load (0.4ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  Rendered listask/details.html.erb within layouts/application (76.4ms)
+Completed 200 OK in 374ms (Views: 278.8ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/fdf-fd-dfddf" for 127.0.0.1 at 2017-02-02 21:45:16 -0300
+Processing by ListaskController#details as HTML
+  Parameters: {"slug"=>"fdf-fd-dfddf"}
+  [1m[36mListask Load (2.1ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks" WHERE (slug = 'fdf-fd-dfddf' )[0m
+  Rendering listask/details.html.erb within layouts/application
+  Rendered listask/details.html.erb within layouts/application (37.1ms)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 2.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `update_at' for #<Listask:0xb3457a28>):
+    1: <h1>Lista: <%=@listd.nombre%> </h1>
+    2: <h3>Fecha de creacion: <%=@listd.created_at%></h3>
+    3: <h3>Fecha de modificacion: <%=@listd.update_at%></h3>
+    4: <h2>Tareas:</h2>
+    5: 
+    6: <div class="col-xs-4">
+  
+app/views/listask/details.html.erb:3:in `_app_views_listask_details_html_erb__1066059509__643648868'
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (83.5ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (19.8ms)
+  Rendering /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (204.9ms)
+Started GET "/fdf-fd-dfddf" for 127.0.0.1 at 2017-02-02 21:45:38 -0300
+Processing by ListaskController#details as HTML
+  Parameters: {"slug"=>"fdf-fd-dfddf"}
+  [1m[36mListask Load (8.2ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks" WHERE (slug = 'fdf-fd-dfddf' )[0m
+  Rendering listask/details.html.erb within layouts/application
+  [1m[36mSimpletask Load (0.8ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  Rendered listask/details.html.erb within layouts/application (56.8ms)
+Completed 200 OK in 271ms (Views: 244.6ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/fdf-fd-dfddf" for 127.0.0.1 at 2017-02-02 21:54:28 -0300
+Processing by ListaskController#details as HTML
+  Parameters: {"slug"=>"fdf-fd-dfddf"}
+  [1m[36mListask Load (1.9ms)[0m  [1m[34mSELECT "listasks".* FROM "listasks" WHERE (slug = 'fdf-fd-dfddf' )[0m
+  Rendering listask/details.html.erb within layouts/application
+  [1m[36mSimpletask Load (0.8ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT "simpletasks".* FROM "simpletasks" WHERE "simpletasks"."listask_id" = ?[0m  [["listask_id", 1]]
+  Rendered listask/details.html.erb within layouts/application (37.4ms)
+Completed 200 OK in 224ms (Views: 211.9ms | ActiveRecord: 2.8ms)
+
+
