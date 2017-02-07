@@ -31,6 +31,7 @@ class ListaskController < ApplicationController
        @listd.simpletask.where("tasktype = ? ", "TempTask").each do |temp|
        	    if temp.fecha_fin < Date.today and temp.estado != "exirado"
 		      temp.estado = "3"
+		      temp.listask_id=9999
 		      temp.save
               end
 		      	 	    

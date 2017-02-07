@@ -59,7 +59,7 @@
                       <%=  tl.label :Prioridad %><br>
                       <%= tl.select( :prioridad ,[['Alta', 1], ['Media', 2], ['Baja', 3]],{selected:tasks.prioridad}, {class: "form-control"})  %>
                        <%=  tl.label :Progreso %><br>
-                      <%= tl.select( :progreso ,(10..100).step(10).map{|s| ["#{s}%", s]},{selected:tasks.porcentaje}, {class: "form-control"})%>
+                      <%= tl.select( :progreso ,(0..100).step(10).map{|s| ["#{s}%", s]},{selected:tasks.porcentaje}, {class: "form-control"})%>
 
                       <%= type=tl.submit value="Actulizar" ,class: "btn btn-default" %>
                      <hr>
@@ -167,7 +167,7 @@
             <%=  tl.label :Prioridad %><br>
             <%= tl.select( :prioridad ,[['Alta', 1], ['Media', 2], ['Baja', 3]],{}, {class: "form-control"}) %>
              <%=  tl.label :Progreso %><br>
-            <%= tl.select( :progreso ,(10..100).step(10).map{|s| ["#{s}%", s]},{}, {class: "form-control"}) %>
+            <%= tl.select( :progreso ,(0..100).step(10).map{|s| ["#{s}%", s]},{}, {class: "form-control"}) %>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
