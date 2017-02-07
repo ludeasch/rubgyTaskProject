@@ -10,7 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170201021347) do
+ActiveRecord::Schema.define(version: 20170207065150) do
+
+  create_table "all_tasks", force: :cascade do |t|
+    t.string   "porcentaje"
+    t.string   "type"
+    t.date     "fecha_inicio"
+    t.date     "fecha_fin"
+    t.string   "descripcion"
+    t.string   "estado"
+    t.string   "prioridad"
+    t.integer  "listasks_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.index ["listasks_id"], name: "index_all_tasks_on_listasks_id"
+  end
 
   create_table "lis_tasks", force: :cascade do |t|
     t.string   "nombre"
@@ -42,8 +56,12 @@ ActiveRecord::Schema.define(version: 20170201021347) do
     t.string   "estado"
     t.string   "prioridad"
     t.integer  "listask_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.string   "tasktype"
+    t.string   "porcentaje"
+    t.date     "fecha_inicio"
+    t.date     "fecha_fin"
     t.index ["listask_id"], name: "index_simpletasks_on_listask_id"
   end
 

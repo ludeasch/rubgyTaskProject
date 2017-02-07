@@ -1,50 +1,206 @@
-<h1>Lista: <%=@listd.nombre%> </h1><button class="btn">Editar</button>
+<div class="container">
+<a href="/">Home</a>
+<h1>Lista: <%=@listd.nombre%> </h1>
 <h3>Fecha de creacion: <%=@listd.created_at%></h3>
 <h3>Fecha de modificacion: <%=@listd.updated_at%></h3>
-<h2>Tareas:</h2>
+<h3>Url: <%= request.env['PATH_INFO'] %></h3>
+<button class="btn" data-toggle="modal" data-target="#listTask">Editar</button>
+<br>
+<br>
+<p id="error"><%= flash[:error] %></p>
+<div class="row">
+    <div class="col-xs-12">
+      <div class="panel panel-default">
+          <h3 class="text-center">Tareas</h3> 
+          <div class="panel-body">
+            <% @listd.simpletask.order("prioridad").each do |tasks| %>
+               <% case tasks.tasktype
+               when "SimpleTask" %>
+                   <%= form_for :simpletask , url: {:controller=>"simpletask", :action => 'updatesimple', :task=>tasks.id} do |st| %> 
+                   <%=  st.label :Descripcion %><br>
+                   <%= st.text_field :descripcion , value:tasks.descripcion ,class: "form-control"%>
+                    
+                    <%=  st.label :Estado %><br>
+                    <%= st.select( :estado ,[['Pendiente', 1], ['Hecha', 2], ['Expirada', 3]],{selected:tasks.estado}, {class: "form-control"}) %>
+                    <%=  st.label :Prioridad %><br>
+                    <%= st.select( :prioridad ,[['Alta', 1], ['Media', 2], ['Baja', 3]],{selected:tasks.prioridad}, {class: "form-control"}) %>
+                    <%= type=st.submit value="Actulizar" ,class: "btn btn-default" %>
+                     <hr>
+                    <% end %>
+                <% when "TempTask" %>
+                   <%= form_for :temporaltask , url: {:controller=>"simpletask", :action => 'updatetemp' , :task=>tasks.id} do |tp| %> 
+                   <div>               
+                   <%=  tp.label :Valides_Desde %><br>
+                   <%= select_date  tasks.fecha_inicio, prefix: :start_date, class: "form-control" %>
+                   </div>
+                   <div>
+                   <%=  tp.label :Valides_Hasta %><br>
+                   <%= select_date tasks.fecha_fin, prefix: :end_date, class: "form-control" %>
+                   </div>
+                   <div>
+                     
+                   <%=  tp.label :Descripcion %><br>
+                   <%= tp.text_field :descripcion ,class: "form-control" , value: tasks.descripcion%>
+                   </div>
+                    
+                    <%=  tp.label :Estado %><br>
+                    <%= tp.select( :estado ,[['Pendiente', 1], ['Hecha', 2], ['Expirada', 3]],{selected:tasks.estado}, {class: "form-control"})%>
+                    <%=  tp.label :Prioridad %><br>
+                    <%= tp.select( :prioridad ,[['Alta', 1], ['Media', 2], ['Baja', 3]],{selected:tasks.prioridad}, {class: "form-control"})  %>
+                    <%= type=tp.submit value="Actulizar" ,class: "btn btn-default" %>
+                     <hr>
+                    <% end %>
+                <% when "LongTask" %>
+                     <%= form_for :longtask , url: {:controller=>"simpletask", :action => 'updatelong' , :task=>tasks.id} do |tl| %> 
+                     <%= tl.text_field :descripcion ,class: "form-control", value:tasks.descripcion %>
+                      
+                      <%=  tl.label :Estado %><br>
+                      <%= tl.select( :estado ,[['Pendiente', 1], ['Hecha', 2], ['Expirada', 3]],{selected:tasks.estado}, {class: "form-control"}) %>
+                      <%=  tl.label :Prioridad %><br>
+                      <%= tl.select( :prioridad ,[['Alta', 1], ['Media', 2], ['Baja', 3]],{selected:tasks.prioridad}, {class: "form-control"})  %>
+                       <%=  tl.label :Progreso %><br>
+                      <%= tl.select( :progreso ,(10..100).step(10).map{|s| ["#{s}%", s]},{selected:tasks.porcentaje}, {class: "form-control"})%>
 
-<div class="col-xs-4">
-  <div class="panel panel-default">
-      <h3 class="text-center"> Simple Task</h3> 
-      <div class="panel-body">
-        <% @listd.simpletask.each do |task| %>
-            <tr>
-              <td><%= task.descripcion %></td>
-            </tr>
+                      <%= type=tl.submit value="Actulizar" ,class: "btn btn-default" %>
+                     <hr>
+                    <% end %>
+                <% end %>
+            <% end %>
+          </div>
+          <div class="panel-footer text-center">
+              <button class="btn" data-toggle="modal" data-target="#simpTask">Crear Simple Task</button>
+              <button class="btn"  data-toggle="modal" data-target="#longTask">Crear Long Task</button>
+              <button class="btn"  data-toggle="modal" data-target="#tempTask">Crear Temporal Task</button>
+
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<div id="simpTask" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">  
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Simple Task</h4>
+      </div>
+      <div class="modal-body">
+        <%= form_for :simpletask , url: {:controller=>"simpletask", :action => 'createsimple', :task=>@listd.slug} do |t| %> 
+           <%=  t.label :Descripcion %><br>
+           <%= t.text_field :descripcion ,class: "form-control"%>
+            
+            <%=  t.label :Estado %><br>
+            <%= t.select( :estado ,[['Pendiente', 1], ['Hecha', 2], ['Expirada', 3]],{}, {class: "form-control"}) %>
+            <%=  t.label :Prioridad %><br>
+            <%= t.select( :prioridad ,[['Alta', 1], ['Media', 2], ['Baja', 3]],{}, {class: "form-control"})  %>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+        <%= type=t.submit value="Crear Tarea" ,class: "btn btn-default" %>
         <% end %>
       </div>
-      <div class="panel-footer text-center">
-          <button class="btn">Crear Simple Task</button>
-      </div>
+    </div>
+
   </div>
 </div>
-<div class="col-xs-4">
-  <div class="panel panel-default">
-  <h3 class="text-center">Long Task</h3> 
-   <div class="panel-body">
-        <% @listd.longtask.each do |task| %>
-            <tr>
-              <td><%= task.descripcion %></td>
-            </tr>
+
+<div id="tempTask" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Temporal Task</h4>
+      </div>
+      <div class="modal-body">
+        <%= form_for :temporaltask , url: {:controller=>"simpletask", :action => 'createmp', :task=>@listd.slug} do |tp| %> 
+           <%=  tp.label :Valides_Desde %>
+           <br>
+           <%= select_date Date.today, prefix: :start_date, class: "form-control"%>
+           <div>
+             
+           <%=  tp.label :Valides_Hasta %><br>
+           <%= select_date Date.today, prefix: :end_date, class: "form-control" %>
+           </div>
+           <div>
+             
+           <%=  tp.label :Descripcion %><br>
+           <%= tp.text_field :descripcion ,class: "form-control"%>
+           </div>
+            
+            <%=  tp.label :Estado %><br>
+            <%= tp.select( :estado ,[['Pendiente', 1], ['Hecha', 2], ['Expirada', 3]],{}, {class: "form-control"}) %>
+            <%=  tp.label :Prioridad %><br>
+            <%= tp.select( :prioridad ,[['Alta', 1], ['Media', 2], ['Baja', 3]],{}, {class: "form-control"})  %>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+        <%= type=tp.submit value="Crear Tarea" ,class: "btn btn-default" %>
         <% end %>
       </div>
-      <div class="panel-footer text-center">
-          <button class="btn">Crear Long Task</button>
+    </div>
+
+  </div>
+</div>
+
+
+
+<div id="longTask" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Long Task</h4>
       </div>
+       <div class="modal-body">
+        <%= form_for :longtask , url: {:controller=>"simpletask", :action => 'createlong', :task=>@listd.slug} do |tl| %> 
+           <%= tl.text_field :descripcion ,class: "form-control"%>
+            
+            <%=  tl.label :Estado %><br>
+            <%= tl.select( :estado ,[['Pendiente', 1], ['Hecha', 2], ['Expirada', 3]],{}, {class: "form-control"}) %>
+            <%=  tl.label :Prioridad %><br>
+            <%= tl.select( :prioridad ,[['Alta', 1], ['Media', 2], ['Baja', 3]],{}, {class: "form-control"}) %>
+             <%=  tl.label :Progreso %><br>
+            <%= tl.select( :progreso ,(10..100).step(10).map{|s| ["#{s}%", s]},{}, {class: "form-control"}) %>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+        <%= type=tl.submit value="Crear Tarea" ,class: "btn btn-default" %>
+        <% end %>
+    </div>
+
   </div>
 </div>
-<div class="col-xs-4">
-  <div class="panel panel-default">
-    <h3 class="text-center"> Temporal Task</h3> 
-    <div class="panel-body">
-          <% @listd.temporaltask.each do |task| %>
-              <tr>
-                <td><%= task.descripcion %></td>
-              </tr>
-          <% end %>
-        </div>
-        <div class="panel-footer text-center">
-            <button class="btn">Crear Temporal Task</button>
-        </div>
+</div>
+
+<div id="listTask" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Edit Lista</h4>
+      </div>
+       <div class="modal-body">
+        <%= form_for :listask , url: {:controller=>"listask", :action => 'update', :slug=>@listd.slug} do |li| %> 
+           <%= li.label :Nombre %><br>
+           <%= li.text_field :nombre, value:@listd.nombre,class: "form-control"%>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+        <%= type=li.submit value="Actualizar" ,class: "btn btn-default" %>
+        <% end %>
+    </div>
+
   </div>
 </div>
+</div>
+
+

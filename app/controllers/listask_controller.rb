@@ -9,14 +9,33 @@ class ListaskController < ApplicationController
 	def create
 		@list = Listask.new()
 		@list.nombre = params[:listask]['nombre']
-		@list.save
-		redirect_to controller: "listask", action: "details", slug: @list.slug
-		
+		if @list.save
+			redirect_to controller: "listask", action: "details", slug: @list.slug
+		else
+			flash[:error] = @list.errors
+			redirect_to controller: "listask", action: "home"
+		end
+
 	end
+	def update
+		 @listd = Listask.where("slug = ? ", params['slug'])[0]
+         @listd.nombre = params['listask']["nombre"]
+         @listd.save
+         redirect_to controller: "listask", action: "details", slug: @listd.slug  
+
+           
+    end
 
 	def details
        @listd = Listask.where("slug = ? ", params['slug'])[0]
-       puts @listd.inspect
+       @listd.simpletask.where("tasktype = ? ", "TempTask").each do |temp|
+       	    if temp.fecha_fin < Date.today and temp.estado != "exirado"
+		      temp.estado = "3"
+		      temp.save
+              end
+		      	 	    
+       	end
+
 	end
 
 
